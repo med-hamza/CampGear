@@ -1,13 +1,265 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,
+h2,
+h3,
+h4,
+h5 {
+
+  font-family: 'Hammersmith One', sans-serif !important;
+
+}
+
+p,
+span {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 200;
+
+}
+
+nav.nav_wise a {
+  color: #000;
+  text-decoration: auto;
+  padding-left: 15px;
+  font-size: 20px;
+}
+
+nav.nav_wise {
+  padding: 10px 0px;
+  background: #f5efe6;
+  text-align: start;
+}
+
+.top_nav {
+  background: #fff;
+  display: block;
+  color: #d5cABC;
+  font-size: 14px;
+  padding: 7px 20px 6px;
+  transition: opacity .75s ease;
+  text-align: center;
+}
+
+.footer_wise {
+  background: #d5cabc;
+  text-align: center;
+  padding: 50px 0;
+}
+
+nav.footer_wise a {
+     color: #fff;
+    font-size: 20px;
+    -webkit-text-decoration: auto;
+    text-decoration: auto;
+    padding-left: 8px;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+
+.home_wise .picture_cate img {
+  width: 450px;
+  height: 450px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+img.pic_wise {
+  width: 420px;
+  height: 420px;
+}
+
+.block_product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0px auto;
+}
+
+.box_product {
+  display: grid;
+  grid-template: auto auto / repeat(3, 1fr);
+  gap: 20px;
+}
+
+.title_wise h4 {
+  font-size: 18px;
+}
+
+.second_pict img {
+  width: 251px;
+  height: 251px;
+  margin-right: 10px;
+  padding: 15px;
+  object-fit: contain;
+  background: #dddd;
+  margin-top: 10px;
+}
+
+p.price_details {
+  font-size: 20px;
+}
+
+.first_pict img {
+  width: 512px;
+  height: 512px;
+  object-fit: contain;
+}
+
+/*  Shopping cart */
+
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+a.wise_link {
+  color: #ca3c66 !important;
+  font-weight: 600;
+}
+
+.LazyLoad.is-visible {
+  margin-top: 150px;
+}
+
+.img_slide {
+  max-width: 100%;
+  height: auto;
+}
+
+.text_slide {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  top: 60%;
+  transform: perspective(1px) translateY(-50%);
+  padding: 0px 5%;
+}
+
+.text_slide h1 {
+
+  color: #fff;
+}
+
+.text_slide h1 {
+  color: #fff;
+  font-size: 55px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.home_link {
+  text-align: start;
+}
+
+.home_link a {
+  background: #fff;
+  color: #000;
+  padding: 10px 18px;
+  -webkit-text-decoration: auto;
+  text-decoration: auto;
+  font-weight: 200;
+  font-size: 17px;
+}
+
+.picture_cate {
+  position: relative;
+  padding: 0 15px;
+}
+
+.picture_cate h3 {
+  position: absolute;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+  right: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 33px;
+  text-transform: uppercase;
+}
+
+.picture_cate:hover:before {
+  opacity: 1;
+}
+
+.picture_cate::before {
+  background: rgba(0, 0, 0, 0.7);
+  content: "";
+  height: 369px;
+  opacity: 0;
+  top: 9%;
+  position: absolute;
+  transition: all 500ms ease-in;
+  width: 402px;
+}
+.picture_cate:hover h3 {
+  text-decoration: underline;
+  transition: all 500ms ease-in;
+}
+.favoriteproduct {
+  background-color: #f5efe6;
+  padding: 8rem 0;
+}
+section.favoriteproduct .box_product {
+  display: grid;
+  grid-template: auto auto / repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+.section_titre h2 {
+  font-size: 50px;
+  font-weight: 600;
+}
+.section_titre p {
+  font-weight: 200;
+  font-size: 20px;
+}
+.title_wise h4 {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 200;
+}
+.meta_wise h4 {
+  font-size: 18px;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+.meta_wise p {
+  font-weight: 200;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.favoriteproduct button {
+  background: #000;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  color: #fff;
+}
+.about img {
+  max-width: 100%;
+}
+.text_home p {
+  font-weight: 200;
+  font-size: 19px;
+  line-height: 33px;
+}
+.block_des p {
+  line-height: 30px;
+}
+.footer_before img {
+  max-width: 100%;
+}
+.social_icon img {
+  padding: 0px 10px;
+}
+.copyright p {
+  color: #fff;
+  font-size: 15px;
 }
