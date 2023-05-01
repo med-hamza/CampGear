@@ -3,12 +3,9 @@ import logo from "../assest/img/campwise.svg"
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom"
 import CartIcon from "../context/CartIcon";
-import { CartContext } from "../context/Context"
-import { useContext } from "react"
-
 
 export default function Header() {
-  const { addToCart } = useContext(CartContext);
+
 
   const [isScrolled, setIsScrolled] = useState(false);
 

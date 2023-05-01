@@ -1,6 +1,5 @@
 import linkedin from "../assest/img/linkedin.svg"
 import instgram from "../assest/img/instagram.svg"
-import { Link } from "react-router-dom"
 
 export default function Footer() {
 

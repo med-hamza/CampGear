@@ -1,6 +1,6 @@
 
 import iconarrow from "../assest/img/left-arrow.svg"
-import { useEffect, useState, useContext } from "react"
+import { useContext } from "react"
 import { useParams ,  useSearchParams} from "react-router-dom"
 import { NavLink, Link, Outlet, useLocation, useLoaderData } from "react-router-dom"
 import { CartContext } from "../context/Context"

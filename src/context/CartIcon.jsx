@@ -9,7 +9,7 @@ export default function Cart() {
     
     const maxLength = 16;
 
-    const { cart, removeFromCart, clearCart, cartTotal, cartQuantity } = useContext(
+    const { cart, removeFromCart, cartTotal, cartQuantity } = useContext(
         CartContext
     );
 
@@ -17,10 +17,6 @@ export default function Cart() {
 
 
     console.log("cart quantity", cartQuantity)
-
-
-
-    const hiddenDiv = document.getElementById('hidden-div');
 
 
 

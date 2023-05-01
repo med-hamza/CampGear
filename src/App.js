@@ -5,6 +5,8 @@ import Home  , {loader as homeLoader}  from './Page/Home';
 import Hiking , {loader as hikingLoader}  from './Page/Hiking';
 import "./server"
 
+import Productdetails , {loader as Productdetail} from './Page/Productdetails';
+
 import HikingDetails , {loader as hikingdetLoader}  from './Page/HikingDetails';
 
 import Desciption from './DetailsProduct/Description';
@@ -26,6 +28,8 @@ const router= createBrowserRouter(createRoutesFromElements(
 <Route element={<Layoutwise />}>
 
 <Route path="/" element={<Home />}  loader={homeLoader}  />
+
+<Route path=":id" element={<Productdetails />}  loader={Productdetail} />
 
 <Route path="shop" element={<Shop />} loader={productLoader} />
 

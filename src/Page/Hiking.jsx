@@ -1,5 +1,5 @@
-import iconarrow from "../assest/img/left-arrow-back.svg"
-import { useEffect, useState , useContext, Suspense} from 'react';
+
+import { useContext, Suspense} from 'react';
 import { Link, useSearchParams, useLoaderData, defer, Await } from 'react-router-dom';
 import { CartContext } from "../context/Context"
 import Loading from "../Loading";

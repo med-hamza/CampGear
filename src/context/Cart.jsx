@@ -1,10 +1,10 @@
 import remove from "../assest/img/remove-icon.svg"
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import { CartContext } from "../context/Context"
 
 export default  function Cart() {
 
-    const { cart, removeFromCart, clearCart, cartTotal, cartQuantity } = useContext(
+    const { cart, removeFromCart, cartTotal, cartQuantity } = useContext(
         CartContext
       );
 

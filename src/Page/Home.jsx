@@ -26,15 +26,19 @@ export default function Home() {
 
   console.log("product", dataPromise)
 
+ 
+
 
   function renderProductelement(products) {
+
+   
 
     const homeproduct = products.map(item => (
       <div key={item.id}>
 
 
         <div>
-          <Link to={item.id}>  <img className="pic_wise" src={item.imageUrl} alt={item.name} />
+          <Link to={item.id} >  <img className="pic_wise" src={item.imageUrl} alt={item.name} />
           </Link>
 
         </div>

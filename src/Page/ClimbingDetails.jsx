@@ -1,6 +1,6 @@
 
 import iconarrow from "../assest/img/left-arrow.svg"
-import { useEffect, useState, useContext  } from "react"
+import { useContext  } from "react"
 import { Link, Outlet , useLocation, NavLink} from "react-router-dom"
 import { useParams , useSearchParams,  useLoaderData } from "react-router-dom"
 import { CartContext } from "../context/Context"
@@ -25,6 +25,8 @@ export default function ClimbingDetails() {
     const params = useParams()
     console.log(params)
     const [searchpram , setsearchparam] = useSearchParams()
+
+   
     const typefilter = searchpram.get("sec_style")
   
 
@@ -71,7 +73,7 @@ export default function ClimbingDetails() {
                <div className="mb-3"> 
                <Link to={`/${product.type}`}
                 className="back_product"> 
-                 <img src={iconarrow} alt="back to product" />
+                 <img src={iconarrow} alt="back to product"  />
                   Back
                 </Link> 
                 </div>
@@ -113,10 +115,10 @@ export default function ClimbingDetails() {
                                   {product.id==="1" ? (
                                     <div className="d-flex">
                                       <div>
-                                        <img src={product.allimg.image2} />
+                                        <img src={product.allimg.image2} alt="desc" />
                                       </div>
                                       <div>
-                                      <img src={product.allimg.image3} />
+                                      <img src={product.allimg.image3} alt="des" />
                                         </div>
                                     </div>   
                                   ):

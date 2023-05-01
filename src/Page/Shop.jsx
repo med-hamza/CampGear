@@ -1,5 +1,5 @@
-import { useEffect, useState , useContext, Suspense } from "react"
-import { Link, useSearchParams, useLocation, useLoaderData, defer, Await  } from "react-router-dom"
+import { useContext, Suspense } from "react"
+import { Link, useSearchParams, useLoaderData, defer, Await  } from "react-router-dom"
 import { CartContext } from "../context/Context"
 
 import Loading from "../Loading";

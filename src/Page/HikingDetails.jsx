@@ -1,6 +1,6 @@
 
 import iconarrow from "../assest/img/left-arrow.svg"
-import { useEffect, useState, useContext } from "react"
+import {useContext } from "react"
 import { NavLink, Link, Outlet , useLocation} from "react-router-dom"
 import { useParams , useSearchParams, useLoaderData } from "react-router-dom"
 import { CartContext } from "../context/Context"
@@ -103,10 +103,10 @@ export default function HikingDetails() {
                                   {product.id==="1" ? (
                                     <div className="d-flex">
                                       <div>
-                                        <img src={product.allimg.image2} />
+                                        <img src={product.allimg.image2}  alt="second pict"/>
                                       </div>
                                       <div>
-                                      <img src={product.allimg.image3} />
+                                      <img src={product.allimg.image3} alt="detais pic" />
                                         </div>
                                     </div>   
                                   ):
