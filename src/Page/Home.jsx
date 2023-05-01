@@ -91,7 +91,7 @@ export default function Home() {
          <section className="about mt-5 mb-5">
           <div className="container">
             <div className="row align-items-center">
-           <div className="col-6"> 
+           <div className="col-lg-6 col-md-6 col-12"> 
            <div className="block_des text-center">
             <h2> Homegrown</h2>
             <p>
@@ -101,7 +101,7 @@ export default function Home() {
            </p>
            </div>
             </div>
-           <div className="col-6">    
+           <div className="col-lg-6 col-md-6 col-12">    
            <img src={pict_abaout} alt="CampGear" /> 
            </div>
             </div>
@@ -109,7 +109,7 @@ export default function Home() {
          </section>
          <div className="container">
 
-          <div className="d-flex mt-3 mb-5 justify-content-center">
+          <div className="d-lg-flex d-md-flex mt-3 mb-5 justify-content-center">
             <div className="box_wiseCateg">
               <div className="picture_cate">
                 <img src={pict_cat1} alt="climbing" />
