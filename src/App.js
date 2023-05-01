@@ -19,6 +19,7 @@ import Climbing , {loader as climbingLoader}  from './Page/Climbing';
 import ClimbingDetails , {loader as climbindetails}   from './Page/ClimbingDetails';
 import Cart from './context/Cart';
 import About from './Page/About';
+import Contact from './Page/Contact';
 
 const router= createBrowserRouter(createRoutesFromElements(
 
@@ -31,6 +32,7 @@ const router= createBrowserRouter(createRoutesFromElements(
 <Route path="about" element={<About />} />
 
 <Route path="cart" element={<Cart />} />
+<Route path="contact" element={<Contact />} />
 
 <Route path="hiking" element={<Hiking />} loader={hikingLoader} />
 

@@ -109,33 +109,68 @@ export default function Home() {
          </section>
          <div className="container">
 
-          <div className="d-flex mt-3 mb-3 justify-content-center">
-            <Link to="/climbing">
+          <div className="d-flex mt-3 mb-5 justify-content-center">
+            <div className="box_wiseCateg">
               <div className="picture_cate">
-
-
                 <img src={pict_cat1} alt="climbing" />
-                <h3> Climbing </h3>
-
-
+                
+                <Link to="/climbing">
+                <div className="card_cate">
+                  <p className="mb-0">
+                    Shop now
+                  </p>
+                </div>
+                </Link>
               </div>
-            </Link>
-            <Link to="/hiking">
+              <div className="box_cate">
+              <div className="title-cetg">
+              <h3> Climbing </h3>
+              </div>
+                <p className="mb-0 sub_title"> Scaling heights, conquering fears.</p>
+              </div>
+              </div>
+              <div className="box_wiseCateg">
               <div className="picture_cate">
 
                 <img src={pict_cat2} alt="hiking" />
-                <h3> Hiking </h3>
+                <Link to="/hiking">
+                <div className="card_cate">
+                  <p className="mb-0">
+                    Shop now
+                  </p>
+                </div>
+                </Link>
 
               </div>
-            </Link>
+              <div className="box_cate">
+              <div className="title-cetg">
+              <h3> Hiking </h3>
+              </div>
+                <p className="mb-0 sub_title"> Find beauty in the journey</p>
+              </div>
+            </div>
+
+            <div className="box_wiseCateg">
+            <div className="picture_cate">
+
+            <img src={pict_cat3} alt="mountain" />
+         
             <Link to="/mountain">
-              <div className="picture_cate">
-
-                <img src={pict_cat3} alt="mountain" />
-                <h3> Mountain </h3>
-
+            <div className="card_cate">
+                  <p className="mb-0">
+                    Shop now
+                  </p>
+                </div>
+              </Link>
+            </div>
+            <div className="box_cate">
+              <div className="title-cetg">
+              <h3> Mountain </h3>
               </div>
-            </Link>
+                <p className="mb-0 sub_title"> Scale new heights, embrace challenge.</p>
+              </div>
+            </div>
+            
 
           </div>
           </div>
