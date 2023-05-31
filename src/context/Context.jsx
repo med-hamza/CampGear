@@ -1,6 +1,5 @@
 
 import { createContext } from "react"
-import { makeServer } from '../server';
 import { useState, useEffect } from "react";
 export const CartContext = createContext();
 

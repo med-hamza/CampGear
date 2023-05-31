@@ -96,7 +96,7 @@ export default function Home() {
           <div className="container">
             <div className="row align-items-center">
            <div className="col-lg-6 col-md-6 col-12"> 
-           <div className="block_des text-center">
+           <div className="block_des text-center fade-in">
             <h2> Homegrown</h2>
             <p>
             We love all of our beautiful brands here at  CampGear but there is a special place in our heart for the Tunisian brands.
@@ -159,13 +159,13 @@ export default function Home() {
 
             <img src={pict_cat3} alt="mountain" />
          
-            <Link to="/mountain">
+        
             <div className="card_cate">
-                  <p className="mb-0">
-                    Shop now
+                  <p className="mb-0 cursor-not">
+                  inward product
                   </p>
                 </div>
-              </Link>
+             
             </div>
             <div className="box_cate">
               <div className="title-cetg">

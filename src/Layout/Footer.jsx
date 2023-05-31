@@ -1,6 +1,6 @@
 import linkedin from "../assest/img/linkedin.svg"
 import instgram from "../assest/img/instagram.svg"
-
+import { Link } from "react-router-dom"
 export default function Footer() {
 
 
@@ -24,9 +24,7 @@ export default function Footer() {
             </div>
         <nav className="footer_wise">
         <a href="/contact"> Contact</a>
-        <a href="/faq"> FAQ</a>
-        <a href="/shipping"> Shipping</a>
-        <a href="term"> Terms of Use</a>
+        <Link to="/about" > About </Link>
         </nav>
             
           </div>    
